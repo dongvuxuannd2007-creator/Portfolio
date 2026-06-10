@@ -6,7 +6,7 @@ export const AnimatedBlobs = ({ variant = 'primary' }: { variant?: 'primary' | '
     : ['bg-rose-500/10', 'bg-orange-500/10', 'bg-[#E1E0CC]/10'];
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       <motion.div
         animate={{
           x: [0, 100, 0, -100, 0],
